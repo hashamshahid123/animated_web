@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caveat&family=Cinzel&family=IBM+Plex+Sans:ital,wght@1,700&family=Inconsolata:wght@300&family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Caveat&family=Cinzel&family=Dancing+Script&family=IBM+Plex+Sans:ital,wght@1,700&family=Inconsolata:wght@300&family=Nanum+Myeongjo&display=swap');
+
+.card {
+    background-color: transparent;
+    border: none; }
+  .card-body {
+    background-color: transparent;
+  }
+
+  .Contact {
+    background-color: #FEDFD5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    margin-top: 6rem;
+  }
+
+  .card-title_h5 {
+    font-family: 'Anton', sans-serif;
+    font-size: 136px;
+  }
+
+  .card-text_contact {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .card-title_h5{
+      font-size: 110px;
+    }
+    .card_5{
+      margin-bottom: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: 786px) {
+    .card-title_h5{
+      font-size: 90px;
+    }
+  }
+  @media only screen and (max-width: 450px) {
+    .card_5 {
+      display: none;
+    }
+  }
+ 

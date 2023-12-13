@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:ital,wght@1,700&family=Inconsolata:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Sans:ital,wght@1,700&family=Inconsolata:wght@300&family=Nanum+Myeongjo&display=swap');
+
+.About {
+    background-color: #FAF8F7;
+    height: 50vh;
+}
+.about_h5 {
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+.About_flex {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+.vl {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    height: 9rem;
+  }
+
+  .span_1 {
+    position: relative;
+    bottom: 0.8rem;
+    right: 10px;
+  }
+  .About_nbr {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 100;
+    font-size: 3.5rem;
+    margin-left: 10px;
+  }
+
+  .about_p {
+    margin-left: 10px;
+  }
