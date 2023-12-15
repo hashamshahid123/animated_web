@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import './Navbar.css'
+import "./Navbar.css";
 
 const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
@@ -18,9 +18,9 @@ const Navbar = () => {
       [dropdown]: !prevState[dropdown],
     }));
     const dropdownMenu = document.querySelector(`.dropdown-menu.${dropdown}`);
-  if (dropdownMenu) {
-    dropdownMenu.classList.toggle('show');
-  }
+    if (dropdownMenu) {
+      dropdownMenu.classList.toggle("show");
+    }
   };
 
   useEffect(() => {
@@ -33,17 +33,22 @@ const Navbar = () => {
       setPrevScrollPos(currentScrollPos);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, [prevScrollPos]);
 
   return (
     <>
       <div className="container">
-        <nav className={`navbar navbar-expand-lg ${visible ? '' : 'navbar-hidden'}`} style={{backgroundColor: 'white'}}>
+        <nav
+          className={`navbar navbar-expand-lg ${
+            visible ? "" : "navbar-hidden"
+          }`}
+          style={{ backgroundColor: "white" }}
+        >
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
               <svg
@@ -78,10 +83,16 @@ const Navbar = () => {
             >
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div
+              className="collapse navbar-collapse"
+              id="navbarSupportedContent"
+            >
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                <li className="nav-item dropdown" onMouseEnter={() => handleDropdownToggle('product')}
-              onMouseLeave={() => handleDropdownToggle('product')}>
+                <li
+                  className="nav-item dropdown"
+                  onMouseEnter={() => handleDropdownToggle("product")}
+                  onMouseLeave={() => handleDropdownToggle("product")}
+                >
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
@@ -91,7 +102,11 @@ const Navbar = () => {
                   >
                     Product
                   </a>
-                  <ul className={`dropdown-menu ${dropdownStates.product ? 'show' : ''}`}>
+                  <ul
+                    className={`dropdown-menu ${
+                      dropdownStates.product ? "show" : ""
+                    }`}
+                  >
                     <li>
                       <a className="dropdown-item" href="#">
                         Action
@@ -112,8 +127,11 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item dropdown" onMouseEnter={() => handleDropdownToggle('solutions')}
-              onMouseLeave={() => handleDropdownToggle('solutions')}>
+                <li
+                  className="nav-item dropdown"
+                  onMouseEnter={() => handleDropdownToggle("solutions")}
+                  onMouseLeave={() => handleDropdownToggle("solutions")}
+                >
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -123,7 +141,11 @@ const Navbar = () => {
                   >
                     Solutions
                   </a>
-                  <ul className={`dropdown-menu ${dropdownStates.solutions ? 'show' : ''}`}>
+                  <ul
+                    className={`dropdown-menu ${
+                      dropdownStates.solutions ? "show" : ""
+                    }`}
+                  >
                     <li>
                       <a className="dropdown-item" href="#">
                         Action
@@ -144,8 +166,11 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item dropdown" onMouseEnter={() => handleDropdownToggle('resources')}
-              onMouseLeave={() => handleDropdownToggle('resources')}>
+                <li
+                  className="nav-item dropdown"
+                  onMouseEnter={() => handleDropdownToggle("resources")}
+                  onMouseLeave={() => handleDropdownToggle("resources")}
+                >
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -155,7 +180,11 @@ const Navbar = () => {
                   >
                     Resources
                   </a>
-                  <ul className={`dropdown-menu ${dropdownStates.resources ? 'show' : ''}`}>
+                  <ul
+                    className={`dropdown-menu ${
+                      dropdownStates.resources ? "show" : ""
+                    }`}
+                  >
                     <li>
                       <a className="dropdown-item" href="#">
                         Action
@@ -176,8 +205,11 @@ const Navbar = () => {
                     </li>
                   </ul>
                 </li>
-                <li className="nav-item dropdown" onMouseEnter={() => handleDropdownToggle('company')}
-              onMouseLeave={() => handleDropdownToggle('company')}>
+                <li
+                  className="nav-item dropdown"
+                  onMouseEnter={() => handleDropdownToggle("company")}
+                  onMouseLeave={() => handleDropdownToggle("company")}
+                >
                   <a
                     className="nav-link dropdown-toggle"
                     href="#"
@@ -187,7 +219,11 @@ const Navbar = () => {
                   >
                     Company
                   </a>
-                  <ul className={`dropdown-menu ${dropdownStates.company ? 'show' : ''}`}>
+                  <ul
+                    className={`dropdown-menu ${
+                      dropdownStates.company ? "show" : ""
+                    }`}
+                  >
                     <li>
                       <a className="dropdown-item" href="#">
                         Action
@@ -215,8 +251,16 @@ const Navbar = () => {
                 </li>
               </ul>
               <form className="d-flex" role="search">
-              <button type="button" className="btn">Login</button>
-              <button type="button" className="btn btn-primary" style={{padding: '0px 19px'}}>Free Trail</button>
+                <button type="button" className="btn">
+                  Login
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-primary"
+                  style={{ padding: "0px 19px" }}
+                >
+                  Free Trail
+                </button>
               </form>
             </div>
           </div>

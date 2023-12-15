@@ -1,36 +1,36 @@
 .nav-link {
-    font-size: 13.5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: 500;
-    margin: 0 10px 0 10px;
+  font-size: 13.5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 500;
+  margin: 0 10px 0 10px;
 }
 
 .container {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
 .dropdown-menu {
-    display: block;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    transform-origin: top;
-    transform: scaleY(0);
-  }
-  
-  .dropdown-menu.show {
-    opacity: 1;
-    transform: scaleY(1);
-  }
+  display: block;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform-origin: top;
+  transform: scaleY(0);
+}
 
-  .navbar {
-    transition: top 0.3s;
-    position: fixed;
-    width: 70%;
-    top: 0;
-    background-color: white;
-    z-index: 1000;
-  }
+.dropdown-menu.show {
+  opacity: 1;
+  transform: scaleY(1);
+}
 
-  .navbar-hidden {
-    top: -70px; 
-  }
+.navbar {
+  transition: top 0.3s;
+  position: fixed;
+  width: 70%;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+.navbar-hidden {
+  top: -70px;
+}

@@ -1,26 +1,26 @@
-.heading{
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    font-size: 64px;
-    padding-top: 20px;
+.heading {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  font-size: 64px;
+  padding-top: 20px;
 }
-#changingText{
-    font-family: 'Times New Roman', Times, serif;
-}
-
-.heading_headline{
-    text-align: center;
-    font-size: 54px;
-    font-weight: bolder;
+#changingText {
+  font-family: "Times New Roman", Times, serif;
 }
 
-.heading_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
+.heading-headline {
+  text-align: center;
+  font-size: 54px;
+  font-weight: bolder;
+}
+
+.heading-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
 }
 
 .btn {
-    padding: 10px 35px;
+  padding: 10px 35px;
 }
